@@ -8,7 +8,7 @@
 
 Developed blog project website:
 
-Node.js + Koa2 + MySQL ==> A complete set of APIs developed
+Node.js + Koa2 + MySQL ==> website Server
 
 
 

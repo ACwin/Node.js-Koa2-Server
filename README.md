@@ -18,6 +18,7 @@ Table of Contents
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
 - [Useful Tools and Resources](#useful-tools-and-resources)
 - [Recommended Design Resources](#recommended-design-resources)
 - [Recommended Node.js Libraries](#recommended-nodejs-libraries)
@@ -109,8 +110,35 @@ Open your browser and enter Return: http://localhost:3000 You can see the front-
 4.브라우저 열기: http://localhost:3000/  즉시 접근 가능합니다.
 ```
 
+Project Structure
+-----------------
 
 
+| Name                               | Description                                                  |
+| ---------------------------------- | ------------------------------------------------------------ |
+| **bin**/www.js                     | Module dependencies.                                         |
+| **config**/passport.js             | Passport Local and OAuth strategies, plus login middleware.  |
+| **controller**/blog.js             | 준비 작업, 코드 재사용, koa형태 미들웨어로 수정                 |
+| **controller**/login.js            | 초기화 경로, 인터페이스 개발                                   |
+| **db**/mysql.js                    | 연결 데이터베이스                                              |
+| **model**/resModel.js              | Mongoose schema and model for User.                          |
+| **public**/style.css               | Static assets                                                |
+| **lib**/like-koa.js                | 조립 중간재                                                   |
+| **lib**test-koa.js                 | test koa                                                     |
+| **lib**/test-like-koa.js           | 구성 요소 바꾸기                                              |
+| **logs**/access.log                | 로그 기록                                                     |
+| **middleware**/loginCheckSession.js| 인터페이스 개발                                               |
+|**routes**/blog.js                  |블로그의 상세 기능                                             |
+|**routes**/index.js                 |koa 소개, 설치, 사용                                           |
+|**routes**/users.js                 |koa 소개, 설치, 사용                                           |                                        
+|**routes**/login.js                 |로그인 알림                                                    |
+| **utils**/crypto.js                | Encryption function                                          |
+| **views**/error.pug                | Error, info and success flash notifications.                 |
+| **views**/header.pug               |Navbar partial template.                                      |
+| **views**/layout.pug               | Base template.                                               |
+| app.js                             | The main application file.                                   |
+| package.json                       | NPM dependencies.                                            |
+| package-lock.json                  | Contains exact versions of NPM dependencies in package.json. |
 
 
 Useful Tools and Resources
@@ -166,7 +194,7 @@ Recommended Client-side Libraries
 
 
 
-### Q&A   Common bug
+### FAQ
 
 ```bash
 Error: listen EADDRINUSE: address already in use :::8080

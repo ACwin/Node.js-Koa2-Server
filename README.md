@@ -43,7 +43,7 @@ Table of Contents
  - Forgot Password
  - Reset Password
  - Delete Account
-- **API Examples**: [API.md](https://github.com/ACwin/Node.js-Koa2-Server/blob/main/API.md)
+- **API Examples**: [API.md](https://github.com/ACwin/Node.js-Koa2-Server/blob/master/API.md)
 
 ### Prerequisites
 

@@ -135,7 +135,7 @@ Project Structure
 |**routes**/login.js                 |로그인 알림                                                    |
 | **utils**/crypto.js                | Encryption function                                          |
 | **views**/error.pug                | Error, info and success flash notifications.                 |
-| **views**/header.pug               |Navbar partial template.                                      |
+| **views**/index.pug               |Navbar partial template.                                      |
 | **views**/layout.pug               | Base template.                                               |
 | app.js                             | The main application file.                                   |
 | package.json                       | NPM dependencies.                                            |

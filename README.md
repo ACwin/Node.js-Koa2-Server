@@ -95,7 +95,7 @@ $ npm install or yarn install ornpm install express --save
 $ npm run dev or yarn dev
 ```
 
-Open your browser and enter Return: http://localhost:8000 You can see the front-end site that is rendered by the service side, of course it may be an empty data site. Specifically, you can see the article on the [API.md](https://github.com/ACwin/Node.js-Koa2-Server/blob/main/API.md) interface.
+Open your browser and enter Return: http://localhost:3000 You can see the front-end site that is rendered by the service side, of course it may be an empty data site. Specifically, you can see the article on the [API.md](https://github.com/ACwin/Node.js-Koa2-Server/blob/master/API.md) interface.
 
 
 
@@ -106,7 +106,7 @@ Open your browser and enter Return: http://localhost:8000 You can see the front-
 1.루트 디렉터리에서 admin로 진입한다,항목: cd admin
 2.패키지 설치, 실행: npm install or yarn install 명령하다
 3.서비스 시작: npmrun dev or yarndev; 
-4.브라우저 열기: http://localhost:9528/  즉시 접근 가능합니다.
+4.브라우저 열기: http://localhost:3000/  즉시 접근 가능합니다.
 ```
 
 
@@ -172,16 +172,14 @@ Recommended Client-side Libraries
 Error: listen EADDRINUSE: address already in use :::8080
 ```
 
-这是端口被占用了 解决办法如下
+This is a port occupied solution:
 
 ```
-netstat  -ano  // 在终端也就是命令行中输入 去找到你项目的被占用的端口号
+netstat  -ano  // Enter your item's occupied port number on the terminal, or command line.
 ```
 
-例如我的是8080的端口 然后记住最右边的数字
-在命令行继续输入
 
 ```
-tskill xxx // 这样就杀死了这个端口号的进程
+tskill xxx // The process of killing this port number
 ```
 

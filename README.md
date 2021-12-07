@@ -23,6 +23,7 @@ Table of Contents
 - [Recommended Design Resources](#recommended-design-resources)
 - [Recommended Node.js Libraries](#recommended-nodejs-libraries)
 - [Recommended Client-side Libraries](#recommended-client-side-libraries)
+- [FQA](#FQA)
 
 
 
@@ -195,6 +196,8 @@ Recommended Client-side Libraries
 
 
 ### FAQ
+------------------
+
 
 ```bash
 Error: listen EADDRINUSE: address already in use :::8080

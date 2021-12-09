@@ -2,36 +2,40 @@
 
 
 
-### Introduction
-
---------------------
-
-Developed blog project website:
-
-Node.js + Koa2 + MySQL ==> website Server
-
-
-
 Table of Contents
 -----------------
-
+- [About The Project](#About-The-Project)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
+- [Roadmap](#Roadmap)
+- [Technical scheme](#Technical-scheme)
 - [Project Structure](#project-structure)
 - [Useful Tools and Resources](#useful-tools-and-resources)
 - [Recommended Design Resources](#recommended-design-resources)
 - [Recommended Node.js Libraries](#recommended-nodejs-libraries)
 - [Recommended Client-side Libraries](#recommended-client-side-libraries)
+- [Contact ](Contact)
 - [FAQ](#faq)
 
+------------------------
 
+## About The Project
+
+
+![image](https://user-images.githubusercontent.com/42907149/145311620-b12571c4-a51c-4972-b721-c01fe067134c.png)
+
+Developed blog project website:
+
+Node.js + Koa2 + MySQL ==>  Node.js Koa2 Blog
+
+---------------------------
 
 ### Features 
 
 [![koa](https://img.shields.io/badge/koa-%5E2.7.0-brightgreen.svg)](https://www.npmjs.com/package/koa)[![koa-router](https://img.shields.io/badge/koa--router-%5E7.4.0-brightgreen.svg)](https://www.npmjs.com/package/koa-router)[![sequelize](https://img.shields.io/badge/sequelize-%5E5.6.1-brightgreen.svg)](https://www.npmjs.com/package/sequelize)[![mysql2](https://img.shields.io/badge/mysql2-%5E1.6.5-brightgreen.svg)](https://www.npmjs.com/package/mysql2)
 
-----------------------------
+
 
 - **Account Management**
 - 관리자 관리
@@ -47,9 +51,11 @@ Table of Contents
  - Delete Account
 - **API Examples**: [API.md](https://github.com/ACwin/Node.js-Koa2-Server/blob/master/API.md)
 
+--------------------------
+
+
 ### Prerequisites
 
---------------------
 
 -  [MySql](https://dev.mysql.com/downloads/workbench/)
 - [Node.js 10+](http://nodejs.org)
@@ -59,7 +65,7 @@ Table of Contents
  - <img src="https://lh5.googleusercontent.com/-2YS1ceHWyys/AAAAAAAAAAI/AAAAAAAAAAc/0LCb_tsTvmU/s46-c-k/photo.jpg" height="17">&nbsp;**Ubuntu** / <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Logo_Linux_Mint.png" height="17">&nbsp;**Linux Mint:** `sudo apt-get install build-essential`
 - [<img src="https://camo.githubusercontent.com/e47ca7b9ffe7e785d52464e61260f9e1941c8853b5053d76f1cda878978d2daa/68747470733a2f2f656e2e6f70656e737573652e6f72672f696d616765732f622f62652f4c6f676f2d6765656b6f5f686561642e706e67" alt="img" style="zoom: 50%;" />](https://camo.githubusercontent.com/e47ca7b9ffe7e785d52464e61260f9e1941c8853b5053d76f1cda878978d2daa/68747470733a2f2f656e2e6f70656e737573652e6f72672f696d616765732f622f62652f4c6f676f2d6765656b6f5f686561642e706e67) **OpenSUSE:** `sudo zypper install --type pattern devel_basis`
 
-
+-------------------------------------
 
 ## Getting Started
 
@@ -110,9 +116,60 @@ Open your browser and enter Return: http://localhost:3000 You can see the front-
 3.서비스 시작: npmrun dev or yarndev; 
 4.브라우저 열기: http://localhost:3000/  즉시 접근 가능합니다.
 ```
+------------------------------------------------
+## Roadmap
 
-Project Structure
------------------
+#### Back-end management background functions
+
+- [x] Register
+
+- [x] Login
+- [x] Logout
+- [x] Uploading profile picture Information
+- [x] Modify uploaded video information
+- [x] View all blog data
+- [x] View all the data in the comments
+- [x] View all background users
+- [x] View all users registered with the front end
+
+#### Address on the backend
+
+Technology stack：`node` + `koa2` + `mysql` 
+
+
+
+#### Front-end features
+
+* 로그인 등록 + 인증번호 암호를 검색하고, 사용자가 존재하지 않으면 자동으로 생성
+* 로그인 여부를 확인합니다. 로그인하지 않은 경우 코멘트와 평가를 허용하지 않습니다
+* 사용자 이름을 변경하고 다른 사람과 중복되는지 확인합니다
+* 프로필 사진 업로드
+* 리뷰 기능, 리뷰 후 개인 중심에서 보여드릴 수 있으며 삭제할 수 있습니다.
+
+
+
+**종합:**
+
+- [x] 회원가입
+- [x] 로그인
+- [x] 로그아웃
+- [x] 상세 페이지
+- [x] 사용자 이름 수정
+- [x] 프로필 사진 업로드
+- [x] 평론
+- [x] 리뷰 삭제
+
+---------------------------
+
+## Technical scheme
+
+![测试 (1)](https://user-images.githubusercontent.com/42907149/145311539-56454370-dae8-4017-853f-94bcd1cd49cb.png)
+
+
+
+
+## Project Structure
+---------------------------
 
 
 | Name                               | Description                                                  |
@@ -151,7 +208,8 @@ Useful Tools and Resources
 - [Favicon Generator](http://realfavicongenerator.net/) - Generate favicons for PC, Android, iOS, Windows 8.
 
 Recommended Design Resources
-----------------------------
+----------------------
+
 - [Code Guide](http://codeguide.co/) - Standards for developing flexible, durable, and sustainable HTML and CSS.
 - [Bootsnipp](http://bootsnipp.com/) - Code snippets for Bootstrap.
 - [Bootstrap Zero](https://www.bootstrapzero.com) - Free Bootstrap templates themes.
@@ -168,6 +226,7 @@ Recommended Design Resources
 Recommended Node.js Libraries
 -----------------------------
 
+
 - [Nodemon](https://github.com/remy/nodemon) - Automatically restart Node.js server on code changes.
 - [geoip-lite](https://github.com/bluesmoon/node-geoip) - Geolocation coordinates from IP address.
 - [Filesize.js](http://filesizejs.com/) - Pretty file sizes, e.g. `filesize(265318); // "265.32 kB"`.
@@ -176,8 +235,8 @@ Recommended Node.js Libraries
 - [node-taglib](https://github.com/nikhilm/node-taglib) - Library for reading the meta-data of several popular audio formats.
 - [sharp](https://github.com/lovell/sharp) - Node.js module for resizing JPEG, PNG, WebP and TIFF images.
 
-Recommended Client-side Libraries
----------------------------------
+**Recommended Client-side Libraries**
+
 
 - [Framework7](http://www.idangero.us/framework7/) - Full Featured HTML Framework For Building iOS7 Apps.
 - [InstantClick](http://instantclick.io) - Makes your pages load instantly by pre-loading them on mouse hover.
@@ -193,10 +252,18 @@ Recommended Client-side Libraries
 - [drop.js](http://github.hubspot.com/drop/docs/welcome/) -  Powerful Javascript and CSS library for creating dropdowns and other floating displays.
 - [scrollReveal.js](https://github.com/jlmakes/scrollReveal.js) - Declarative on-scroll reveal animations.
 
+------------------------------
 
+### Contact 
+
+
+- YANG - [@ACwin](https://github.com/ACwin) - [email@uniceyang0116@gmail.com](mailto:emailuniceyang0116@gmail.com)
+
+Project Link: https://github.com/ACwin/Node.js-Koa2-Server
+
+--------------------------
 
 ### FAQ
-------------------
 
 
 ```bash
@@ -214,3 +281,4 @@ netstat  -ano  // Enter your item's occupied port number on the terminal, or com
 tskill xxx // The process of killing this port number
 ```
 
+------------------------

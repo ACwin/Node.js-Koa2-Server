@@ -113,7 +113,7 @@ Open your browser and enter Return: http://localhost:3000 You can see the front-
 # 백그라운드 관리 시스템 시작
 1.루트 디렉터리에서 admin로 진입한다,항목: cd admin
 2.패키지 설치, 실행: npm install or yarn install 명령하다
-3.서비스 시작: npmrun dev or yarndev; 
+3.서비스 시작: npm run dev or yarndev; 
 4.브라우저 열기: http://localhost:3000/  즉시 접근 가능합니다.
 ```
 ------------------------------------------------
